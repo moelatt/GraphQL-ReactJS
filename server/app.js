@@ -9,7 +9,7 @@ const app = express();
 // Allow cross-orign requests
 app.use(cors());
 // connect to mongoDB database
-mongoose.connect('mongodb+srv://johnlu:johnlu123@mydatabase-jpjpq.mongodb.net/graphql?retryWrites=true&w=majority', 
+mongoose.connect('mongodb+srv://@mydatabase-jpjpq.mongodb.net/graphql?retryWrites=true&w=majority', 
 {useNewUrlParser: true, useUnifiedTopology: true}).then(()=>{
     console.log('Connect to MongoDB database');
 })
